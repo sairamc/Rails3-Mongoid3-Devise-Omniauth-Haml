@@ -25,7 +25,7 @@ If you simply wish to modify the application for your own project, you can downl
 h2. Tips & How To's
 
 This Wiki has also additional information (How To's & Tips) to customize your own rails application.
-* "How To: Change Devise password lenght":https://github.com/fertapric/rails3-mongoid-devise-omniauth/wiki/How-To:-Change-Devise-password-lenght
+* "How To: Change Devise password length":https://github.com/fertapric/rails3-mongoid-devise-omniauth/wiki/How-To:-Change-Devise-password-lenght
 * "How To: Use Omniauth with OpenID, Google, Yahoo...":https://github.com/fertapric/rails3-mongoid-devise-omniauth/wiki/How-To:-Use-Omniauth-with-OpenID,-Google,-Yahoo...
 * "Tip: Twitter App registration (URL field)":https://github.com/fertapric/rails3-mongoid-devise-omniauth/wiki/Tip:-Twitter-App-registration-(URL-field)
 * "How To: Retrieve email information (middle step) from providers like Twitter or LinkedIn":https://github.com/fertapric/rails3-mongoid-devise-omniauth/wiki/How-To:-Retrieve-email-information-(middle-step)-from-providers-like-Twitter-or-LinkedIn
