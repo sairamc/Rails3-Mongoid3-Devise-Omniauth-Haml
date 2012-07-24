@@ -6,7 +6,6 @@ require "active_resource/railtie"
 require "rails/test_unit/railtie"
 
 
-
 # If you have a Gemfile, require the gems listed there, including any gems
 # you've limited to :test, :development, or :production.
 Bundler.require(:default, Rails.env) if defined?(Bundler)
@@ -20,7 +19,7 @@ module Rails3MongoidDeviseOmniauth
     # Custom directories with classes and modules you want to be autoloadable.
     # config.autoload_paths += %W(#{config.root}/extras)
     config.autoload_paths += %W(#{config.root}/lib)
-    config.autoload_paths += Dir["#{config.root}/lib/**/"]
+
     # Only load the plugins named here, in the order given (default is alphabetical).
     # :all can be used as a placeholder for all plugins not explicitly named.
     # config.plugins = [ :exception_notification, :ssl_requirement, :all ]

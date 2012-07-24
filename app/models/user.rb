@@ -36,7 +36,7 @@ class User
       self.email = user_info['email'] unless user_info['email'].blank?
     end  
     # Set a random password for omniauthenticated users
-    self.password, self.password_confirmation = String::RandomString(16)
+    self.password, self.password_confirmation = Devise.friendly_token
     if (confirmation) 
       self.confirmed_at, self.confirmation_sent_at = Time.now  
     end 
