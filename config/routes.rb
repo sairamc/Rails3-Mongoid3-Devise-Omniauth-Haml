@@ -14,4 +14,7 @@ Rails3MongoidDeviseOmniauth::Application.routes.draw do
   match '/auth/failure' => 'sessions#failure'
   match '/tw_signin' => 'sessions#twitter_signin'
   match '/fb_signin' => 'sessions#facebook_signin'
+
+  match ':controller(/:action(.:format))'
+  match ':controller(/:action(/:id(.:format)))'
 end

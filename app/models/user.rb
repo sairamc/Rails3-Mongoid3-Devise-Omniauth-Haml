@@ -45,17 +45,20 @@ class User
   # ==========  USER METHODS  =========== #
   # ===================================== #
   def apply_omniauth(omniauth, confirmation)
-    self.email = omniauth['user_info']['email'] if email.blank?
+    self.email = omniauth['info']['email'] if email.blank?
     # Check if email is already into the database => user exists
     apply_trusted_services(omniauth, confirmation) if self.new_record?
   end
   
   # Create a new user
-  def apply_trusted_services(omniauth, confirmation)  
+  def apply_trusted_services(omniauth, confirmation) 
     # Merge user_info && extra.user_info
-    user_info = omniauth['user_info']
+    user_info = omniauth['user_info'] ? omniauth['user_info'] : omniauth['info']
     if omniauth['extra'] && omniauth['extra']['user_hash']
       user_info.merge!(omniauth['extra']['user_hash'])
+    end 
+    if omniauth['extra'] && omniauth['extra']['raw_info']
+      user_info.merge!(omniauth['extra']['raw_info'])
     end  
     # try name or nickname
     if self.name.blank?
@@ -71,7 +74,7 @@ class User
     self.password, self.password_confirmation = Devise.friendly_token
     if (confirmation) 
       self.confirmed_at, self.confirmation_sent_at = Time.now  
-    end 
+    end
   end
   
   

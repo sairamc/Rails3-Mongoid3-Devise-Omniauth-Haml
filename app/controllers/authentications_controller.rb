@@ -28,8 +28,11 @@ class AuthenticationsController < ApplicationController
       flash[:notice] = t(:welcome)
       sign_in_and_redirect(:user, user)
     elsif (omniauth['provider'] == 'twitter' || omniauth['provider'] == 'linked_in') && 
-      omniauth['uid'] && (omniauth['user_info']['name'] || omniauth['user_info']['nickname'] || 
-      (omniauth['user_info']['first_name'] && omniauth['user_info']['last_name']))
+           omniauth['uid'] && 
+          (omniauth['info']['name'] || 
+           omniauth['user_info']['name'] || 
+           omniauth['user_info']['nickname'] || 
+           (omniauth['user_info']['first_name'] && omniauth['user_info']['last_name']))
       session[:omniauth] = omniauth.except('extra');
       redirect_to(:controller => 'registrations', :action => 'email')
     else
