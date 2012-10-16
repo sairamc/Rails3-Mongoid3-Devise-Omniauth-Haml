@@ -9,6 +9,7 @@ gem 'rails', "3.2.8"
 # Datebase related gems
 gem 'mongoid'
 gem 'bson_ext'
+gem 'mongoid_fulltext'
 
 # Authentication gems
 gem 'devise', :git => "git://github.com/plataformatec/devise.git"
