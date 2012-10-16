@@ -1,5 +1,4 @@
-<<<<<<< HEAD
-# RoR 3 + MongoDB (mongoid) + Devise + Omniauth
+# RoR 3 + MongoDB (mongoid) 3 + Devise + Omniauth + Haml 
 
 ## References
 
@@ -72,5 +71,3 @@ THE SOFTWARE IS PROVIDED “AS IS”, WITHOUT WARRANTY OF ANY KIND, EXPRESS OR I
 Rails3-Mongoid3-Devise-Omniauth-Haml
 ====================================
 
-Rails3-Mongoid3-Devise-Omniauth-Haml
->>>>>>> 8de2fd8519b24ede0d7f7aacbae7bd320d74de12
