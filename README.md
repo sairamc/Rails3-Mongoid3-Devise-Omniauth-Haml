@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # RoR 3 + MongoDB (mongoid) + Devise + Omniauth
 
 ## References
@@ -67,3 +68,9 @@ Permission is hereby granted, free of charge, to any person obtaining a copy of 
 The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
 
 THE SOFTWARE IS PROVIDED “AS IS”, WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
+=======
+Rails3-Mongoid3-Devise-Omniauth-Haml
+====================================
+
+Rails3-Mongoid3-Devise-Omniauth-Haml
+>>>>>>> 8de2fd8519b24ede0d7f7aacbae7bd320d74de12
