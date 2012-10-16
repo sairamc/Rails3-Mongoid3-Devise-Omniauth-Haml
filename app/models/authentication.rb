@@ -4,5 +4,5 @@ class Authentication
   field :provider, :type => String
   field :uid, :type => String
   
-  referenced_in :user
+  belongs_to :user
 end
